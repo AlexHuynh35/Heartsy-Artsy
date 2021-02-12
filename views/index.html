@@ -1,0 +1,119 @@
+<!-- This is a static file -->
+<!-- served from your routes in server.js -->
+
+<!-- You might want to try something fancier: -->
+<!-- html/nunjucks docs: https://mozilla.github.io/nunjucks/ -->
+<!-- pug: https://pugjs.org/ -->
+<!-- haml: http://haml.info/ -->
+<!-- hbs(handlebars): http://handlebarsjs.com/ -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Heartsy Artsy</title>
+    <meta name="description" content="A cool thing made with Glitch">
+    <link id="favicon" rel="icon" href="https://glitch.com/edit/favicon-app.ico" type="image/x-icon">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/style.css">
+    
+  </head>
+  <body>
+    <div class="indexMainContainer">
+    <nav>
+      <div class="logoContainer">
+        <img src="https://www.artstastetrail.com/wp-content/uploads/2016/06/Arts-icon-2.svg">
+        <h3>
+          Heartsy Artsy
+        </h3>
+      </div>
+      <div class="profilePicture">
+        <div class="login">
+        <div class="box5">
+            <h1 id="login">Login</h1>
+            <h1 id="signup">Sign Up</h1>
+            <form class="login" action="" method="post"> 
+              <div>
+                <label for="username">Username</label>
+                <input type="text" name="username" id="username">
+              </div>
+              <div>
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password">
+              </div>
+              <div class="actions">
+                <input type="submit" name="login" value="Login">
+              </div>
+            </form>
+            <form class="signup" action="" method="post"> 
+              <div>
+                <label for="username">Username</label>
+                <input type="text" name="username" id="signupusername">
+              </div>
+              <div>
+                <label for="password">Password</label>
+                <input type="password" name="password" id="signuppassword">
+              </div>
+              <div class="actions">
+                <input type="submit" name="signup" value="Sign Up">
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <header>
+    </header>
+
+    <main>
+      <section>
+        <div class="heroImage">
+          <div id="imageOpacitymask">
+          <img src="https://i.imgur.com/Qx3Rg38.jpg">
+          </div>
+          <div id="heroText">
+            <h1>
+              Heartsy Artsy
+            </h1>
+            <p>
+              Create, Share, and Enjoy Art!
+            </p>
+          </div>
+        </div>
+        
+        <a class="linkButton" href="/canvas" target="_blank">
+          Create Art
+        </a>
+        
+        <div>
+          <h3 class="someArtworks">
+            Some Artworks
+          </h3>
+          <div class="exampleWork">
+            <img class="example" src="https://cdn.glitch.com/96d5cf68-30a9-4799-8a79-793f402b181c%2Fyour_drawing(1).svg?1522016223432">
+            <img class="example" src="https://cdn.glitch.com/96d5cf68-30a9-4799-8a79-793f402b181c%2Fyour_drawing.svg?1522016339773">
+            <img class="example" src="https://cdn.glitch.com/96d5cf68-30a9-4799-8a79-793f402b181c%2Fyour_drawing%20(1).svg?1522016489417">
+            <img class="example" src="https://cdn.glitch.com/96d5cf68-30a9-4799-8a79-793f402b181c%2Fyour_drawing%20(1).svg?1522016741336">
+          </div>
+          <div class="exampleText"></div>
+        </div>
+
+      </section>
+    </main>
+
+    <footer>
+      <a href="https://glitch.com">
+        Remix this in Glitch
+      </a>
+    </footer>
+    </div>
+    <!-- Your web-app is https, so your scripts need to be too -->
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js"
+            integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00="
+            crossorigin="anonymous"></script>
+    <script src="/client.js"></script>
+    <script src="/index.js"></script>
+
+  </body>
+</html>

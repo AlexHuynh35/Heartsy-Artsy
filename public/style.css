@@ -1,0 +1,271 @@
+/* styles */
+/* called by your view template */
+
+/* You might want to try something fancier: */
+/* less: http://lesscss.org/ */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: helvetica, arial, sans-serif;
+  margin: 25px;
+  width: 1200px;
+}
+.bold {
+  font-weight: bold;
+}
+
+p {
+  max-width: 600px;
+}
+
+form {
+  margin-bottom: 25px;
+
+  background-color: cyan;
+  display: inline-block;
+  width: 100%;
+  max-width: 340px;
+  border-radius: 3px;
+}
+
+input {
+  display: block;
+  margin-bottom: 10px;
+  padding: 5px;
+  width: 100%;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+  font-size: 16px;
+}
+
+.indexMainContainer button {
+  font-size: 16px;
+  border-radius: 3px;
+  background-color: lightgrey;
+  border: 1px solid grey;
+  box-shadow: 2px 2px teal;
+  cursor: pointer;
+}
+
+.indexMainContainer button:hover {
+  background-color: yellow;
+}
+
+.indexMainContainer button:active {
+  box-shadow: none;
+}
+
+li {
+  margin-bottom: 5px;
+}
+
+footer {
+  margin-top: 50px;
+  padding-top: 25px;
+  border-top: 1px solid lightgrey;
+}
+
+footer > a {
+  color: #BBBBBB;
+}
+
+.nicejob {
+  text-decoration: line-through;
+}
+.logoContainer{
+  width: 250px;
+  height: 25px;
+}
+.logoContainer img{
+  width: 25px;
+  height: 25px;
+  display: inline;
+}
+.logoContainer h3{
+  padding: 0;
+  display: inline;
+}
+nav{
+  display: flex;
+  color: #5ea7e9;
+  justify-content: space-between;
+  border-bottom: black 5px solid;
+  padding-bottom: 10px;
+}
+.userImage{
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  background-color: #5ea7e9;
+  display: inline-block;
+  visibility: hidden;
+}
+.heroImage{
+  background-size: cover;
+  height: 800px;
+  position: relative;
+}
+#imageOpacitymask{
+  height: 800px;
+  width: 1200px;
+  opacity: 0.5;
+  z-index: -1;
+  position: absolute;
+}
+#imageOpacitymask img{
+  width: 1200px;
+  height: 800px;
+}
+#heroText{
+  border: 5px black solid;
+  text-align: center;
+  position: absolute;
+  top: 250px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 300px;
+  width: 300px;
+}
+#heroText h1{
+  font-weight: bold;
+  color: black;
+  padding-top: 35px;
+  padding-left: 50px;
+  padding-right: 50px;
+  font-size: 40px;
+}
+#heroText p{
+  font-weight: bold;
+  color: black;
+  text-align: center;
+  padding-bottom: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
+  font-size: 20px;
+}
+.exampleWork{
+  display: flex;
+  flex-wrap: wrap;
+}
+.exampleWork img{
+  width: 48%;
+}
+.exampleText{
+  display: flex;
+  flex-wrap: wrap;
+}
+a.linkButton{
+  -webkit-appearance: button;
+  text-decoration: none;
+  color: initial;
+  width: 142px;
+  height: 50px;
+  font-size: 30px;
+  margin-top:10px;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  padding: 5px 0 0 2px;
+}
+
+
+h1{
+    font-family: 'Cinzel', serif;
+    color: blue;
+}
+
+
+h1,
+.login,
+.signup,
+.account,
+.contact{
+  width:80%;
+  margin: 0 auto;
+}
+
+.box5 h1 {
+  text-align: center;
+  background-color: rgba(191, 216, 227, 0.8);
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  padding-bottom: 10px;
+  font-size: 20px;
+  line-height: 1.4;
+  margin: 0px;
+  width: 50%;
+  height: 30%;
+  color: black;
+  font-family: sans-serif;
+  border: 1px solid black;
+}
+
+div.login {
+  display: flex;
+  align-items: stretch;
+  align-content: stretch;
+  margin: 0px;
+}
+
+.login, .signup {
+  background-color: rgba(191, 216, 227, .4);
+  border: 1px solid rgba(191, 216, 227, .8);
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  width: 350px;
+}
+
+input[type="submit"] {
+  border: 1px solid rgba(191, 216, 227, .8);
+  border-radius: 5px;
+  color: #fff;
+  background-color: rgb(54, 134, 169);
+  font-size: 110%;
+}
+
+input[type="text"],
+input[type="password"] {
+  border: 1px solid rgba(191, 216, 227, .8);
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 110%;
+  width: 100%;
+}
+
+.box5 {
+    flex: 2;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+
+.box5 form {
+  width: 100%;
+  display: flex;
+  flex: 1;
+}
+
+#username, #signupusername {
+    padding: 3px;
+    border-radius: 2px;
+    font-size: 110%;
+    width: 90%;
+}
+
+#password, #signuppassword {
+    padding: 3px;
+    border-radius: 2px;
+    font-size: 110%;
+    width: 90%;
+}
+
+.example {
+  margin: 5px;
+  width: 30%;
+  border: 1px solid black;
+}
+.someArtworks {
+  text-align: center;
+}
