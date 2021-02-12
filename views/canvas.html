@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title> Canvas </title>
+    <link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet">
+
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/canvas.css">
+        <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js"
+            integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00="
+            crossorigin="anonymous"></script>
+    <script type="text/javascript" src="paper-full.min.js"></script>
+    <script type="text/javascript" src="canvas.js"></script>
+  </head>
+  <body>
+    <h1>
+      Your Canvas
+    </h1>
+    <div class="flex-container">
+      <button id="colorwheel">✏️ Color</button>
+      <button id= "pen-sizes">✏️ Radius: <span id="pen-size">5</span>px</button>
+      <button id="eraser">⚪ Eraser</button>
+      <button id="clear">❌ Clear canvas?</button>
+      <button id="save">✅ Save Canvas<a id="downloadFile"></a></button>
+    </div>
+    <div class="canvas-flex">
+      <canvas id="myCanvas"> </canvas>
+    </div>
+    
+    <button id="shareArt">
+      Share Art
+    </button>
+    <ul class="links">
+      <div>
+        Feature coming soon!
+      </div>
+      <li id="Facebook">
+        <a href="https://www.facebook.com/sharer/sharer.php?u=">
+          <img src="https://www.facebook.com/images/fb_icon_325x325.png">
+        </a>
+      </li>
+      
+      <li id="Twitter">
+        <a href="https://twitter.com/home?status=">
+          <img src="https://www.ioby.org/blog/wp-content/uploads/2017/04/Twitter-logo2.png">
+        </a>
+      </li>
+      
+      <li id="Instagram">
+        <a href="https://www.instagram.com/accounts/login/">
+          <img src="https://pbs.twimg.com/profile_images/786681705981673472/T5OKNZ1-.jpg">
+        </a>
+      </li>
+      
+      <li id="HeartsyArtsy">
+        <a href="/">
+          <img src="https://www.artstastetrail.com/wp-content/uploads/2016/06/Arts-icon-2.svg">
+        </a>
+      </li>
+    </ul>
+  </body>    
+</html>
